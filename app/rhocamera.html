@@ -10,8 +10,6 @@
 	<script type="text/javascript" charset="utf-8" src="/public/jquery/jquery-1.9.1.min.js"></script>
     <script type="text/javascript" charset="utf-8" src="/public/jquery/jquery.json-2.3.min.js"></script>
 
-	<!--script type="text/javascript" charset="utf-8" src="/public/api/rhoapi.js"></script-->
-	<!--script type="text/javascript" charset="utf-8" src="/public/api/rho.camera.js"></script-->
 	<script type="text/javascript" src="/public/api/rhoapi-modules.js"></script>
 <body>
 <p></p>
@@ -29,9 +27,12 @@
 
 <button onclick="takepic();">takePicture</button><br><br>
 <div id='cbdata'></div><br><br>
-<img src='' id='camImage'></img><br>
+<div id='imgdiv'>
+	<img src='' id='camImage'></img>
+</div><br>
 <button onclick="send();">Send</button><br><br> (send to server if captured image is good !)
 <div id='uploadstatus'></div><br><br>
+<button onclick="cleardivs();">Clear</button><br><br> (clear to take pic again)
 </body>
 
 <script type="text/javascript">
@@ -92,6 +93,11 @@ var send = function(){
 		fileContentType: "text/plain"
 	};
 	Rho.Network.uploadFile(uploadfileProps,upload_file_callback);
+};
+var cleardivs = function(){
+	document.getElementById('cbdata').innerHTML = '';
+	document.getElementById('imgdiv').innerHTML = "<img src='' id='camImage'></img>";
+	document.getElementById('uploadstatus').innerHTML = '';
 };
 </script>
 
