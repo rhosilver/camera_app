@@ -1,0 +1,8 @@
+rhodes_path='C:/RhoMobileSuite5.1.0.beta.5/ruby/lib/ruby/gems/1.9.1/gems/rhodes-5.1.0.beta.5'
+app_version='1.0'
+app_name='camera_customer'
+reload_app_changes=0
+debug_port=
+debug_host='127.0.0.1'
+platform='wm'
+ext_path=C:/RhoMobileSuite5.1.0.beta.5/ruby/lib/ruby/gems/1.9.1/gems/rhodes-5.1.0.beta.5/lib/commonAPI/coreapi;C:/RhoMobileSuite5.1.0.beta.5/ruby/lib/ruby/gems/1.9.1/gems/rhodes-5.1.0.beta.5/lib/extensions/json;C:/RhoMobileSuite5.1.0.beta.5/ruby/lib/ruby/gems/1.9.1/gems/rhoconnect-client-5.1.0.beta.5/lib/../ext/rhoconnect-client;C:/RhoMobileSuite5.1.0.beta.5/ruby/lib/ruby/gems/1.9.1/gems/rhodes-5.1.0.beta.5/lib/commonAPI/mediacapture;C:/RhoMobileSuite5.1.0.beta.5/ruby/lib/ruby/gems/1.9.1/gems/rhoelements-5.1.0.beta.5/libs/rhoelementsext;C:/RhoMobileSuite5.1.0.beta.5/ruby/lib/ruby/gems/1.9.1/gems/rhoelements-5.1.0.beta.5/libs/motoapi;C:/RhoMobileSuite5.1.0.beta.5/ruby/lib/ruby/gems/1.9.1/gems/rhoelements-5.1.0.beta.5/libs/rhoelements;C:/RhoMobileSuite5.1.0.beta.5/ruby/lib/ruby/gems/1.9.1/gems/rhoelements-5.1.0.beta.5/libs/symboldevice;C:/RhoMobileSuite5.1.0.beta.5/ruby/lib/ruby/gems/1.9.1/gems/rhoelements-5.1.0.beta.5/libs/barcode;C:/RhoMobileSuite5.1.0.beta.5/ruby/lib/ruby/gems/1.9.1/gems/rhoelements-5.1.0.beta.5/libs/indicators;C:/RhoMobileSuite5.1.0.beta.5/ruby/lib/ruby/gems/1.9.1/gems/rhoelements-5.1.0.beta.5/libs/cardreader;C:/RhoMobileSuite5.1.0.beta.5/ruby/lib/ruby/gems/1.9.1/gems/rhoelements-5.1.0.beta.5/libs/signature;C:/RhoMobileSuite5.1.0.beta.5/ruby/lib/ruby/gems/1.9.1/gems/rhoelements-5.1.0.beta.5/libs/hardwarekeys;C:/RhoMobileSuite5.1.0.beta.5/ruby/lib/ruby/gems/1.9.1/gems/rhodes-5.1.0.beta.5/lib/commonAPI/sensor;
