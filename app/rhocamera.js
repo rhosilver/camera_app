@@ -72,7 +72,7 @@ var selfie = function(){
 	var platform = Rho.System.platform();
 	if (frontCam != 'undefined'){
 		if (platform == 'ANDROID' || platform == 'APPLE'){
-			selfieCb = frontCam.takePicture({'saveToDeviceGallery': true})
+			selfieCb = frontCam.takePicture({'saveToDeviceGallery': true});
 		}else{
 			selfieCb = frontCam.takePicture();
 		}
@@ -80,5 +80,5 @@ var selfie = function(){
 	}else{
 		selfieStatus = 'Front cam not found :( !!'
 	}
-	document.getCameraById('status').innerHTML = selfieStatus;
+	document.getElementById('status').innerHTML = selfieStatus;
 };
