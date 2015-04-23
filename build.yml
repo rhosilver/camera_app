@@ -5,10 +5,6 @@ version: '1.0'
 vendor: rhomobile
 build: debug
 applog: rholog.txt
-# rhohub:
-#   url: "https://appstaging.rhohub.com/api/v1/"
-# connection:
-#   proxy: "http://wwwgate0.mot.com:1080"
 iphone:
   configuration: Release
   sdk: iphonesimulator8.1
