@@ -62,23 +62,27 @@ var cleardivs = function(){
 	document.getElementById('uploadstatus').innerHTML = '';
 };
 var choosepic = function () {
-	var pic = Rho.Camera.choosePicture();
-	document.getElementById('setimage').src = pic.imageUri;
+	Rho.Camera.choosePicture({},callbackfunc);
 };
 var selfie = function(){
 	var selfieCb;
 	var selfieStatus;
-	var frontCam = Rho.Camera.getCameraByType('front');
-	var platform = Rho.System.platform();
-	if (frontCam != 'undefined'){
+	var enumData = Rho.Camera.enumerate();
+	var platform = Rho.System.platform;
+	if (enumData.length>1 && platform != 'WINDOWS'){
+		var frontCam = Rho.Camera.getCameraByType('front');
 		if (platform == 'ANDROID' || platform == 'APPLE'){
 			selfieCb = frontCam.takePicture({'saveToDeviceGallery': true});
 		}else{
 			selfieCb = frontCam.takePicture();
 		}
-		selfieStatus = "Capture Status : " + selfie.status;
+		selfieStatus = "Capture Status : " + selfieCb.status;		
+		
 	}else{
-		selfieStatus = 'Front cam not found :( !!'
+		selfieStatus = 'Front cam not found :( !!';
 	}
 	document.getElementById('status').innerHTML = selfieStatus;
 };
+var callbackfunc = function(cbData){
+	document.getElementById('setimage').src = cbData.imageUri;
+}
