@@ -8,15 +8,15 @@ var srvURL = 'http://10.233.85.82/NEON/ReceivedFiles/Upload.aspx';
 var enumFunc = function() {
 	var enumData = Rho.Camera.enumerate();
 	for (var i = 0; i <= enumData.length - 1; i++) {
-		data += (i+1).toString() + ") " + enumData[i].getProperty('ID') + ' ' + enumData[i].getProperty('cameraType') +  "; ";
+		data += (i+1).toString() + ") " + enumData[i].cameraType +  "; ";
 	};
 	
 	document.getElementById("enumdata").innerHTML = data;
 
 	if (enumData.length > 0){
 		for (i=0; i < enumData.length; i++){
-	       	document.getElementById('cameradropdown').options[i + 1].text = enumData[i].getProperty('ID') + ' ' + enumData[i].getProperty('cameraType');
-		   	document.getElementById('cameradropdown').options[i + 1].value = enumData[i].getProperty('cameraType');
+	       	document.getElementById('cameradropdown').options[i + 1].text = enumData[i].cameraType;
+		   	document.getElementById('cameradropdown').options[i + 1].value = enumData[i].cameraType;
 		}
 	}else{
 		alert("cameras not available in this device");
